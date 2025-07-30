@@ -1,0 +1,1 @@
+ - app folder is the main folder
