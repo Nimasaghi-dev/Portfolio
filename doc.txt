@@ -6,3 +6,5 @@
  - also we will create a font variable and assign Inter to it and also define text-weight from "100" to "900".
  - change the title and description in metadata function in layout.tsx for SEO purposes.
  - change metadata tag for the project and add some description to it. /layout.tsx
+ - we will add background to the layout.tsx in the rootLayout function we will add bg-[#0d0d1f].
+ - 
