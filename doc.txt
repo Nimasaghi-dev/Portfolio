@@ -11,4 +11,10 @@
  - we create a Home.tsx file inside Home folder and create Home component inside it.
  - the we import Home component and add Home component to our page.tsx <Home />
  - we add className="overflow-hidden" to the Home component to prevent any overflow for the Home.tsx .
- - 
+ - now we start routing in the project . routing let us to have multiple pages.
+    localhost:3000/about
+    localhost:3000/about/team --> this is a nested route. 
+    localhost:3000/about/team/Nima --> this is a dynamic route.
+
+- then we will create aboute folder in the app and inside it we will create page.tsx . this is the place we will implement about page. app/about/page.tsx .
+- we make a component inside page.tsx and name it AboutPage.
