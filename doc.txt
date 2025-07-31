@@ -1,3 +1,4 @@
  - app folder is the main folder
  - layout.tsx is the overall wrapper of the project. so we will have navbar,children, footer , ... in this page. we can also change metadata and font from here.
  - page.tsx is the main page. when u go to localhost3000 this page will be appear.
+ - in the public folder make another folder "images" and put inside it all the images we need for the project.
