@@ -17,4 +17,9 @@
     localhost:3000/about/team/Nima --> this is a dynamic route.
 
 - then we will create aboute folder in the app and inside it we will create page.tsx . this is the place we will implement about page. app/about/page.tsx .
-- we make a component inside page.tsx and name it AboutPage.
+- we make a component inside page.tsx and name it AboutPage. add some style to the text in AboutPage.
+- then we will create nested route.
+- inside about folder we create another folder named team and inside team we create nested route. we create page.tsx inside team folder and name it TeamPage.tsx . --> app/about/team/page.tsx
+- next we will create dynamic route --> app/about/team/[name]/page.tsx .
+- we use [name] cause we assume we have a team member which will be search by their names.
+- inside [name] we create another page.tsx and inside it we create a component/route and name it TeamDetailsPage.
