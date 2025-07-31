@@ -23,3 +23,5 @@
 - next we will create dynamic route --> app/about/team/[name]/page.tsx .
 - we use [name] cause we assume we have a team member which will be search by their names.
 - inside [name] we create another page.tsx and inside it we create a component/route and name it TeamDetailsPage.
+- To access the dynamic route parameter (which has name), we need to make the TeamDetailsPage component async because we might need to fetch data based on the parameter.
+- We receive {params} as an argument (automatically provided by Next.js for dynamic routes), and we can directly access the name from params without using await since params is a regular object, not a Promise.

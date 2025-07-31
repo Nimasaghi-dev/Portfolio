@@ -1,8 +1,9 @@
 import React from 'react'
 
-const TeamDetailsPage = () => {
+const TeamDetailsPage = async ({params}) => {
+    const name = (await params).name;
   return (
-    <div className='text-white text-3xl'>Team member TeamDetailsPage</div>
+    <div className='text-white text-3xl'>Team member TeamDetailsPage {name}</div>
   )
 }
 
