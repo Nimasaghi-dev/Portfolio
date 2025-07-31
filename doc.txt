@@ -8,4 +8,7 @@
  - change metadata tag for the project and add some description to it. /layout.tsx
  - we will add background to the layout.tsx in the rootLayout function we will add bg-[#0d0d1f].
  - next we should create a components folder and inside it we create two more components one is helper which includes helper components and the other is Home folder component which we will add our home page related component into it like hero section, service section, contact section and ... .
+ - we create a Home.tsx file inside Home folder and create Home component inside it.
+ - the we import Home component and add Home component to our page.tsx <Home />
+ - we add className="overflow-hidden" to the Home component to prevent any overflow for the Home.tsx .
  - 
