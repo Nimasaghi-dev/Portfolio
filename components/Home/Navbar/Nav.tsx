@@ -1,6 +1,7 @@
 // Navbar component - for the desktop navigation bar
 import React from 'react'
-import { FaCode } from 'react-icons/fa';
+// import { FaCode } from 'react-icons/fa';
+import { BiAtom } from "react-icons/bi";
 
 const Nav = () => {
   return (
@@ -9,8 +10,9 @@ const Nav = () => {
             {/* logo */}
             <div className='flex items-center space-x-2'>
                 <div className='w-10 h-10 bg-white rounded-full items-center justify-center flex flex-col'>
-                    <FaCode className='w-5 h-5 text-black'/>
+                    <BiAtom className='w-5 h-5 text-black'/>
                 </div>
+                <h1 className='text-white hidden sm:block md:text-2xl text-xl font-bold'>Nima</h1>
             </div>
         </div>
     </div>
