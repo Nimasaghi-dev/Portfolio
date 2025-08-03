@@ -34,3 +34,8 @@
 - then in ResponsiveNav compnent inside the <div> </div> we will add <Nav /> and <MobileNav /> .
 - then we will add ResponsiveNav to layout component above the children so all the page have access to this navbar.
 
+- now if we check the browser we see Nav , MobileNav and Home .
+- we go to Nav component and add className to it . className= "transtion-all duration-200 h-[12vh] fixed w-full".
+- inside the <div></div> in Nav component we will add another <div></div> and add className= "flex items-center w-[90%] h-full justify-between mx-auto " this is the outer container, and inside this <div></div> we will have first our logo container with className="flex items-center space-x-2"
+- inside it we will have a Logo Icon Container with className="'w-10 h-10 bg-white rounded-full items-center justify-center flex flex-col"
+- inside the last <div> we will have the logo Icon <faCode w-5 h-5 text-black/>.
