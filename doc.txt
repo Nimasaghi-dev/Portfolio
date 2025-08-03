@@ -25,3 +25,12 @@
 - inside [name] we create another page.tsx and inside it we create a component/route and name it TeamDetailsPage.
 - To access the dynamic route parameter (which has name), we need to make the TeamDetailsPage component async because we might need to fetch data based on the parameter.
 - We receive {params} as an argument (automatically provided by Next.js for dynamic routes), and we can directly access the name from params without using await since params is a regular object, not a Promise.
+- we remove all the routing pages because the were just for training purposes.
+- now we create Navbar folder. app/Home/Navbar
+- inside Navbar we create a Nav component - this for the desktop navigation bar. Home/Navbar/Nav.tsx
+- then we create MobileNav.tsx inside Navbar - this os for the side bar menu in the smaller devices. Home/Navbar/MobileNav.tsx
+- after that we create another component inside Navbar and we call it ResponsiveNav.tsx - here we will put the functionality to have a responsive navbar. Home/Navbar/ResponsiveNav.tsx .
+
+- then in ResponsiveNav compnent inside the <div> </div> we will add <Nav /> and <MobileNav /> .
+- then we will add ResponsiveNav to layout component above the children so all the page have access to this navbar.
+
