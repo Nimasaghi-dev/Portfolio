@@ -40,4 +40,7 @@
 - inside it we will have a Logo Icon Container with className="'w-10 h-10 bg-white rounded-full items-center justify-center flex flex-col"
 - inside the last <div> we will have the logo Icon <faCode w-5 h-5 text-black/>.
 - now we see the logo icon.
-- below the <div> which contains the logo we will add <h1>Nima<h1/>
+- below the <div> which contains the logo we will add <h1>Nima<h1/> with the following styles -> "text-xl hidden sm:block md:text-2xl text-white font-bold" .
+- we create a folder on root and name it constant.
+- inside constant folder we create a constant.ts file to keep constants variables inside it.
+- inside constant.ts we define variables to prevent repeting styling for every navlinks. we can easily .map through it and apply styling for all the navlinks.
