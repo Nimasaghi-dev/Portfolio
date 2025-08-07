@@ -47,7 +47,15 @@
 
 - after defining variables in the constant.ts we go back to the Home/Navbar/Nav.tsx and start to create navLinks.
 - we create a <div></div> with className="hidden lg:flex items-center space-x-10" 
-- insde the div we will map to our navlinks. {navLinks.map()} we import it from constant.
+- insde the div we will map to our navlinks. {navLinks.map()} we import it from constant.with mapping through navlinks we dont need to apply style for every one of them. we define style once and all of them has it.
 - we return a <Link> component and the Link will be coming from our next Link.
 - in the <Link> we should first provide a key --> key={link.id} then we will add some properties href={link.url} and apply some className={'text-base hover:text-cyan-300 text-white font-medium transition-all duration-200'}
 - then inside a <Link></Link> we will add a <p></p> with our {link.label} -- > <p>{link.label}</p> which is our navbar items.
+
+- After navLinks we have some buttons. 
+- we create a <div></div> give some style className='flex items-center space-x-4' to it and inside the div we put our CV button.
+- to have the cv button we use a <button></button> tag and give this className tyles to it --> 'px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2'
+- inside the <button></button> we use <BiDownload /> and add some style to it --> className='w-5 h-5'
+- Dont forget we have to first   import { BiDownload } from "react-icons/bi"; otherwise the icon doesnt work.
+- after <BiDownload /> we add a span tag and inside span we right what we want to be displayed on the button.
+- now we have a Download CV button.
