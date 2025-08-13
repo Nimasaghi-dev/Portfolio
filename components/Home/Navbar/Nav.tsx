@@ -5,6 +5,7 @@ import React from 'react'
 // import { FaCode } from 'react-icons/fa';
 import { BiAtom } from "react-icons/bi";
 import { BiDownload } from "react-icons/bi";
+import { HiBars3BottomRight } from 'react-icons/hi2';
 
 const Nav = () => {
   return (
@@ -32,6 +33,8 @@ const Nav = () => {
                 <BiDownload className='w-5 h-5' />
                 <span>Download CV</span>
               </button>
+              {/*Hamburger menu*/}
+              <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
             </div>
         </div>
     </div>

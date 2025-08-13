@@ -35,5 +35,4 @@ export const NavLinks = [
         url: "#",
         label:"Contact",
     },
-
 ]

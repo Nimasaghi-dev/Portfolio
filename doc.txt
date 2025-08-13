@@ -59,3 +59,5 @@
 - Dont forget we have to first   import { BiDownload } from "react-icons/bi"; otherwise the icon doesnt work.
 - after <BiDownload /> we add a span tag and inside span we right what we want to be displayed on the button.
 - now we have a Download CV button.
+
+- now we need a hamburger menu. for having this burger menu we will use <HiBars3bottomRight/> from react/icons and give him some style and make it hidden in large screen because its just for small screen --> "lg:hidden"
