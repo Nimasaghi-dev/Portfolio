@@ -1,15 +1,35 @@
+"use client";
+
 // Navbar component - for the desktop navigation bar
 import { NavLinks } from '@/constant/constant';
 import Link from 'next/link';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 // import { FaCode } from 'react-icons/fa';
 import { BiAtom } from "react-icons/bi";
 import { BiDownload } from "react-icons/bi";
 import { HiBars3BottomRight } from 'react-icons/hi2';
 
 const Nav = () => {
+
+  const [ navBg , setNavBg ] = useState(false);
+
+  useEffect(() => {
+    const handler = () => {
+    if (window.scrollY >= 90) setNavBg(true);
+    if (window.scrollY < 90) setNavBg(false);
+    };
+
+    window.addEventListener("scroll", handler);
+
+    return () => window.removeEventListener("scroll", handler)
+  }, [])
+
   return (
-    <div className='transition-all duration-200 h-[12vh] z-[10000] fixed w-full'>
+    <div 
+    className={`transition-all 
+    ${navBg ? "bg-[#0f142ed9]" : "fixed"}
+    duration-200 h-[12vh] z-[10000] fixed w-full`}
+    >
         <div className='flex justify-between h-full w-[90%] mx-auto items-center'>
             {/* logo */}
             <div className='flex items-center space-x-2'>

@@ -61,3 +61,24 @@
 - now we have a Download CV button.
 
 - now we need a hamburger menu. for having this burger menu we will use <HiBars3bottomRight/> from react/icons and give him some style and make it hidden in large screen because its just for small screen --> "lg:hidden"
+
+- its time to implement scroll feature - it change the navbar color when you scroll down.
+- first we change the Nav.tsx component to client component by adding ( "use client;" ) at the top of the page .
+                                - IMPORTANT : IN NEXTJS EVERY COMPONENT IS SERVER SIDE COMPONENT BY DEFAULT.
+- in server components you can not use hooks.
+
+- now in the Nav function we create a stick variable using useState hook. --> const [ navbBg , setNavBg ] = useState(false);
+- then we use useEffect hook. --> useEffect(() => {}, []) and we will add an empty dependency array here.
+- inside the useEffect body we add a handler function --> const handler = () => {}
+- then we add a if statement inside it to check if the window is scrolled more than 90px in y direction --> if(window.scrollY >= 90) and if its true we set our navBg to true and it will show the background.
+    --> setNavBg(true)
+
+- below the if statement we will add a eventListener to listen to the scroll event and active our handler function. --> window.addEventListener("scroll", handler);
+- dont forget to use a clean-up function in our useEffect hook.
+- in the clean-up function we return another function which will removerEventListener --> return () => window.removerEventListener("scroll", handler)
+
+- now in the return section and in the first <div> we should use template litteral because we want to add dynamic classes.
+- we use `` instead of "" .
+- and we check a condition inside it --> ${navbBg ? 'bg-[#0f142ed9] shadow-md' : 'fixed'}
+- to check if its works we will add h-[2000px] in Home.tsx to have a scroll on the screen.
+- now its working and we remove the h-[2000px] from Home.tsx
