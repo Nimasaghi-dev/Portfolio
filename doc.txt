@@ -100,4 +100,38 @@
 
 - next we need the cross(X) icon to close the menu navigation bar .
 
-- inside the div we were working on we start to add cross icon. --> <CgClose className='absolute top-[0.7rem] right-[1.4rem] sm:w-8 sm:h-8 w-6 h-6 '/>
+- inside the div we were working on we start to add cross icon. --> <CgClose className='absolute top-[0.7rem] right-[1.4rem] sm:w-8 sm:h-8 w-6 h-6 '/> .
+- Now its time to make this feature responsive.
+- we convert ResponsiveNav.tsx component to a client component using "use client;"
+- inside the function we use useState hook and create state variable --> const [showNav, setShowNav] = useState(false);
+- then we create a function handler opeNavHandler which will set our setShowNav(true) and another handler the same as previous one to setShowNav(false);
+
+- now we need to pass these props in our <Nav/> and <Mobile/> --> 
+    <Nav openNav={openNavHandler} />
+    <MobileNav showNav={showNav} />
+- now we need to get this props in our actual component and give them the proper type definition.here is the time typescript come to the picture.
+- we go to the Nav.tsx and belolw the imports we will declare type props. we can name it anything.
+- we will use props share and here we recieve a openNav which is func that returns void.
+  --> type Props = {
+    openNav: () => {}
+  }
+
+- then we should pass this inside our Nav component --> const Nav = ({openNav}:Props) => {..}
+- now when we click on the <HiBars3bottomRight/> burger menu we will call our openNav function --> <HiBars3BottomRight onClick={openNav} />
+
+- now we go to the MobileNav and declare type props.
+- inside type declaration we are recieving showNav: boolean and closeNav: () => void which is a function that returns void.
+    type Props = {
+        showNav: boolean;
+        closeNav: () => void;
+    }
+
+- now we pass this in our MobileNav function --> const MobileNav = ({closeNav, showNav}:Props) 
+- now when we click on the cross icon we should call our closeNav to close the navigation bar. --> onClick={closeNav}
+
+- based on the showNav we will show our sidebar or hide it.
+- so in the MobileNav function we create a variable name openNav and here we will check if --> showNav ? "translate-x-0" : "translate-x-[100%]"
+- now we need to add openNav o our Navlinks and overlay also.
+- so because it is dynamic value we will convert className to template litteral.
+- then we will add navOpen ---> ${navOpen}
+- now responsivnes working properly
