@@ -135,3 +135,13 @@
 - so because it is dynamic value we will convert className to template litteral.
 - then we will add navOpen ---> ${navOpen}
 - now responsivnes working properly
+
+
+---------- Hero Section ------------
+- inside Home folder we will make a folder Hero and inside HEro we make a file Hero.tsx .
+- then we create a component boiler plate .
+- now we add Hero.tsx in our Home.tsx .
+- in the Hero.tsx we create a div and give this className to it --> 'relative h-screen flex items-center justify-center text-white overflow-hidden flex-col'
+- inside the div we create another div with the following className --> 'relative z-10 flex flex-col items-center'
+- inside the second div we add an <Image /> and assign the following properties to it --> width={150} height={150} className='rounded-full border-8 border-[#0c0c48aa]'
+- now we can see the photo at the middle of the hero section.
