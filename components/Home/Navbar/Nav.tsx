@@ -5,7 +5,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import { BiDownload } from "react-icons/bi";
 import { HiBars3BottomRight } from 'react-icons/hi2';
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { Code2 } from "lucide-react";  // new logo
 
 type Props = {
@@ -42,7 +42,7 @@ const Nav = ({ openNav }: Props) => {
         >
           <motion.div
             className="w-10 h-10 bg-white rounded-full items-center justify-center flex flex-col"
-            whileHover={{ rotate: 360, scale: 1.1 }}
+            whileHover={{ rotate: 360, scale: 1.1, backgroundColor: "#22d3ee" }}
             transition={{ type: "spring", stiffness: 120, damping: 10 }}
           >
             {/*  Replaced BiAtom with Code2 */}
@@ -51,13 +51,25 @@ const Nav = ({ openNav }: Props) => {
 
           <motion.h1
             className="text-white hidden sm:block md:text-2xl text-xl font-bold"
-            initial={{ opacity: 0, x: -15 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.5, duration: 0.7 }}
-            whileHover={{ scale: 1.05, color: "#22d3ee" }}
+            initial={{ opacity: 0, y: -30, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              type: "spring",
+              stiffness: 120,
+              damping: 12,
+            }}
+            whileHover={{
+              scale: 1.1,
+              color: "#22d3ee",
+              textShadow: "0px 0px 8px #22d3ee",
+            }}
+            whileTap={{ scale: 0.95 }}
           >
             Nima
-          </motion.h1>
+        </motion.h1>
+
         </motion.div>
 
         {/* navLinks */}
