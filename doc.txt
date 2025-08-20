@@ -211,3 +211,9 @@ i used the code below to :
     import { useReducedMotion } from "framer-motion";
     const reduce = useReducedMotion();
 // then conditionally avoid rotation if reduce === true
+
+
+
+-- install lucide-react from npm to have a new logo
+- first import it --> import { Code2 } from "lucide-react";
+- then replace <Code2/> it with <BiAtom/>

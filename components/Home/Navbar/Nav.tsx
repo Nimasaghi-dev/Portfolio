@@ -3,9 +3,10 @@
 import { NavLinks } from '@/constant/constant';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
-import { BiAtom, BiDownload } from "react-icons/bi";
+import { BiDownload } from "react-icons/bi";
 import { HiBars3BottomRight } from 'react-icons/hi2';
 import { motion } from "framer-motion";
+import { Code2 } from "lucide-react";  // new logo
 
 type Props = {
   openNav: () => void;
@@ -31,6 +32,7 @@ const Nav = ({ openNav }: Props) => {
       duration-200 h-[12vh] z-[10000] fixed w-full`}
     >
       <div className="flex justify-between h-full w-[90%] mx-auto items-center">
+        
         {/* logo with animation */}
         <motion.div 
           className="flex items-center space-x-2"
@@ -43,7 +45,8 @@ const Nav = ({ openNav }: Props) => {
             whileHover={{ rotate: 360, scale: 1.1 }}
             transition={{ type: "spring", stiffness: 120, damping: 10 }}
           >
-            <BiAtom className="w-5 h-5 text-black" />
+            {/*  Replaced BiAtom with Code2 */}
+            <Code2 className="w-5 h-5 text-black" />
           </motion.div>
 
           <motion.h1
