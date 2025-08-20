@@ -145,3 +145,27 @@
 - inside the div we create another div with the following className --> 'relative z-10 flex flex-col items-center'
 - inside the second div we add an <Image /> and assign the following properties to it --> width={150} height={150} className='rounded-full border-8 border-[#0c0c48aa]'
 - now we can see the photo at the middle of the hero section.
+
+- in the Hero.tsx below the Image tag we will add an H1 with a span tag inside it.
+- we give the h1 the following className --> "tex-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wider"
+- now we give the span also className --> 'text-cyan-200'
+- for the span tag text we want to have a text-effect . so we need to install a package "type writer from npm"
+- before going further we should change the component to a client side component.
+- then we import typewriter  --> import Typewriter from 'typewriter-effect'.
+- after that we should use Typewriter tag inside the span tag.
+- then we use the Typewriter tag properties to have a strings , which starts automatically and it shows repetedly(loop) dealy set a delay on showing the new    string, deleteSpeed is the speed of removing words and wrapperClassName is says 2px padding from left  . --> 
+        <Typewriter 
+            options={{
+                strings:[
+                    'Frontend Developer',
+                    'Backend Developer',
+                    'Web Developer'
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 75,
+                deleteSpeed: 50,
+                wrapperClassName: "pl-2",
+        }} />
+
+- 
