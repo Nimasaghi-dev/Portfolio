@@ -35,7 +35,7 @@ const Nav = ({ openNav }: Props) => {
         
         {/* logo with animation */}
         <motion.div 
-          className="flex items-center space-x-2"
+          className="flex items-center space-x-2 cursor-pointer"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -50,7 +50,7 @@ const Nav = ({ openNav }: Props) => {
           </motion.div>
 
           <motion.h1
-            className="text-white hidden sm:block md:text-2xl text-xl font-bold"
+            className="text-white hidden sm:block md:text-2xl text-xl font-bold cursor-pointer"
             initial={{ opacity: 0, y: -30, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{
