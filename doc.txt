@@ -168,4 +168,46 @@
                 wrapperClassName: "pl-2",
         }} />
 
-- 
+
+
+- to apply some nice animation effect to the logo and name we will install framer from npm.
+- then import motion from "framer-motion" --> import { motion } from "framer-motion";
+- I wrapped the logo+name group in a motion.div and used initial/animate/transition to gentle fade/slide to guide the eye without being flashy.
+        <motion.div 
+          className="flex items-center space-x-2"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+
+- then for the logo add Hover/tap interaction I used whileHover with a spring transition so the logo feels “real” (snappy, not robotic).
+        <motion.div
+            whileHover={{ rotate: 360, scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 120, damping: 10 }}
+            >
+            <BiAtom className="w-5 h-5 text-black" />
+        </motion.div>
+
+- then add delay effect to the name , The name appears just after the logo using a small delay and also add rhythm. The color shift to cyan on hover matches our palette.
+        <motion.h1
+            initial={{ opacity: 0, x: -15 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5, duration: 0.7 }}
+            whileHover={{ scale: 1.05, color: "#22d3ee" }}
+            >
+            Nima
+        </motion.h1>
+
+
+i used the code below to :
+- Keep it accessible & performant
+
+- Only animate opacity/transform (GPU-accelerated).
+
+- Keep durations ~0.6–0.8s (feels modern).
+
+- If you want to be extra considerate, you can adapt to users who prefer reduced motion
+
+    import { useReducedMotion } from "framer-motion";
+    const reduce = useReducedMotion();
+// then conditionally avoid rotation if reduce === true

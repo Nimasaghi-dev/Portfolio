@@ -11,8 +11,8 @@ const Hero = () => {
             <Image 
                 src="/images/My-Photo.jpeg" 
                 alt='Heroimage' 
-                width={150} 
-                height={150} 
+                width={180} 
+                height={180} 
                 className='rounded-full border-8 border-[#0c0c48aa]'
             />
             <h1 className="tex-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wider">I&apos;m a Passionate {' '}
