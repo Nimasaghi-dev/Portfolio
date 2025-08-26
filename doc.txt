@@ -219,10 +219,16 @@ i used the code below to :
 - then replace <Code2/> it with <BiAtom/>
 
 
----------- SEE MY WORK BUTTOn -------------
+---------- SEE MY WORK BUTTON -------------
 - now its time to implement see my works button.
 - in the hero.tsx after <h1></h1> tag we create a <button></button>
 - and assign the following className to it --> 'mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium'
 - inside the <button></button> we add a <span>See My Works</span>.
 - below the <span></span> we add <BsArrowRight /> from react/icon . --> <BsArrowRight className='w-5 h-5 ml-2 inline-block'/>
 - now we have a button below the <h1></h1> tag 
+
+
+----------- Add Particles background ------------
+- instal npm package for particles @tsparticles/react  / slim / engine
+- download the prepared code from the source code and add it to the project.
+- then add the component <ParticlesHero /> to the Hero.tsx under the first div in the return statement.

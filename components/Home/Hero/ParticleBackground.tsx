@@ -1,4 +1,3 @@
-// components/ParticlesHero.tsx
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -11,8 +10,6 @@ import {
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
-// Need to install @tsparticles/react , @tsparticles/engine and @tsparticles/slim packages
-// npm install @tsparticles/react @tsparticles/engine @tsparticles/slim
 
 export default function ParticlesHero() {
   const [init, setInit] = useState(false);
