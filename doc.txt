@@ -262,5 +262,5 @@ i used the code below to :
 - then we should pass our Props to the ResumeCard component --> const ResumeCard = ({Icon, role, date}: Props) => { ...
 - now we give style to the div inside the ResumeCard component --> mb-6
 - inside the first <div></div> we add another div -- > <div className="flex items-start space-x-6 bg-blue-950/20 transition-all duration-300 p-4 sm:p-8 rounded-md"></div>
-- and we add another div inside the lkast one. --> <div className="sm:w-14 sm:h-14 w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col"></div>
-- 
+- and we add another div inside the last one. --> <div className="sm:w-14 sm:h-14 w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col"></div>
+- iside the <div></div> we add <Icon className="sm:w-8 sm:h-8 w-6 h-6 text-white" /> . to have the icon in the ResumeCard .
