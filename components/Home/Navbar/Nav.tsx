@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 import { BiDownload } from "react-icons/bi";
 import { HiBars3BottomRight } from 'react-icons/hi2';
 import { color, motion } from "framer-motion";
-import { Code2 } from "lucide-react";  // new logo
+import { FaLaptopCode } from "react-icons/fa";
 
 type Props = {
   openNav: () => void;
@@ -46,7 +46,7 @@ const Nav = ({ openNav }: Props) => {
             transition={{ type: "spring", stiffness: 120, damping: 10 }}
           >
             {/*  Replaced BiAtom with Code2 */}
-            <Code2 className="w-5 h-5 text-black" />
+            <FaLaptopCode className="w-5 h-5 text-black" />
           </motion.div>
 
           <motion.h1

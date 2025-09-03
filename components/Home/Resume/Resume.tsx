@@ -1,5 +1,6 @@
 import ResumeCard from "./ResumeCard";
 import { FaCodepen } from "react-icons/fa";
+import { FaServer } from "react-icons/fa";
 
 const Resume = () => {
   return (
@@ -12,6 +13,7 @@ const Resume = () => {
           </h1>
           <div className="mt-10">
             <ResumeCard Icon={FaCodepen} role="Full Stack Developer" />
+            <ResumeCard Icon={FaServer} role="Full Stack Developer" />
           </div>
         </div>
         {/* Education */}
