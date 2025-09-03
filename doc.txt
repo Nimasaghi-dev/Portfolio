@@ -236,4 +236,31 @@ i used the code below to :
 ----------- Resume Section ------------
 - first we create a folder in components/Home/Resume and inside the folder create a Resume.tsx
 - after creating the component we add it in our Home.tsx under <Hero/> component. --> <Resume />
+- then in the Resume.tsx we give the first <div> following className --> "pt-20 pb-16"
+- inside the first <div></div> we add another <div></div> and give ot the following  --> "w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10"
+- inside the second <div> is dedicated to {/* work experiments */} so we create a <div> for the work experiments section.
+- we create the same section also for {Education}
+
+- to have the information of Education and experiences we should create another compnent ResumeCard.tsx .
+- in the Resume/ResumeCard.tsx we create a component boiler plate for ResumeCard.tsx
+- back to Resume.tsx and in the work experiences section we will add <h1>My Work <span>Experiences</span></h1>
+- we will add some style to the h1 and span --> <h1 className="text-3xl sm:text-4xl font-bold text-white">My Work <span className="text-cyan-200">Experiences</span></h1>
+- below the <h1></h1> we create a <div className="mt-10"></div> 
+- inside the div we will use a ResumeCard. Dont forget to import the component ResumeCard.tsx
+- inside <ResumeCard /> we will pass props to have a react icon --> <ResumeCard Icon={faCodepen}/> and also another porps to have role title 
+    <ResumeCard Icon={FaCodepen} role="Full Stack Developer" />
+- now we need to recieves those props .
+- in the ResumeCard.tsx at the top we create a type for Props 
+        type Props = {
+            Icon: IconType;
+            role: string;
+            date?: string;  --------> ? means it is optional you can use it or not.
+        }
+- for the Icon we need to import it from react/icons --> import { IconType } from "react-icons";
+- the date is for education section . because we are using the same ResumeCard for the Education section.
+
+- then we should pass our Props to the ResumeCard component --> const ResumeCard = ({Icon, role, date}: Props) => { ...
+- now we give style to the div inside the ResumeCard component --> mb-6
+- inside the first <div></div> we add another div -- > <div className="flex items-start space-x-6 bg-blue-950/20 transition-all duration-300 p-4 sm:p-8 rounded-md"></div>
+- and we add another div inside the lkast one. --> <div className="sm:w-14 sm:h-14 w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col"></div>
 - 
