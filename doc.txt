@@ -232,3 +232,8 @@ i used the code below to :
 - instal npm package for particles @tsparticles/react  / slim / engine
 - download the prepared code from the source code and add it to the project.
 - then add the component <ParticlesHero /> to the Hero.tsx under the first div in the return statement.
+
+----------- Resume Section ------------
+- first we create a folder in components/Home/Resume and inside the folder create a Resume.tsx
+- after creating the component we add it in our Home.tsx under <Hero/> component. --> <Resume />
+- 
