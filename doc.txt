@@ -264,3 +264,6 @@ i used the code below to :
 - inside the first <div></div> we add another div -- > <div className="flex items-start space-x-6 bg-blue-950/20 transition-all duration-300 p-4 sm:p-8 rounded-md"></div>
 - and we add another div inside the last one. --> <div className="sm:w-14 sm:h-14 w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col"></div>
 - iside the <div></div> we add <Icon className="sm:w-8 sm:h-8 w-6 h-6 text-white" /> . to have the icon in the ResumeCard .
+
+
+- i change the logo and add sth else from react-icons .

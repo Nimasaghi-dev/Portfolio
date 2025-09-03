@@ -13,7 +13,7 @@ const Resume = () => {
           </h1>
           <div className="mt-10">
             <ResumeCard Icon={FaCodepen} role="Full Stack Developer" />
-            <ResumeCard Icon={FaServer} role="Full Stack Developer" />
+            <ResumeCard Icon={FaServer} role="IT-Support" />
           </div>
         </div>
         {/* Education */}
