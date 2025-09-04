@@ -276,4 +276,11 @@ i used the code below to :
 
 - after the {date} inside the div we add another h1 for {role} --> <h1 className="text-gray-200 text-xl sm:text-2xl font-semibold">{role}</h1>
 - below the h1 we add a <p className="text-gray-200 text-sm sm:text-base pt-3"></p> which contains info about the role.
+
+-- in Resume.tsx in the education section we add -->
+         <h1 className="text-3xl sm:text-4xl font-bold text-cyan-200 ">
+            Education
+        </h1>
+
+- below the h1 we add one more time <ResumeCard Icon={} /> but we change the icons.
 - 
