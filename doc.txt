@@ -283,4 +283,10 @@ i used the code below to :
         </h1>
 
 - below the h1 we add one more time <ResumeCard Icon={} /> but we change the icons.
-- 
+
+
+--------- Project Section ---------
+- to build this section we should create a folder Home/Projects/Projects.tsx
+- then we create a component boilerplate and then add it to our Home.tsx -->    <Project />
+- in the Project.tsx we create a div and give this className="pt-16 pb-16"
+- inside the div we add a <H1>
