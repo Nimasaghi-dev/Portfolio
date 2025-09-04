@@ -265,5 +265,15 @@ i used the code below to :
 - and we add another div inside the last one. --> <div className="sm:w-14 sm:h-14 w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col"></div>
 - iside the <div></div> we add <Icon className="sm:w-8 sm:h-8 w-6 h-6 text-white" /> . to have the icon in the ResumeCard .
 
-
 - i change the logo and add sth else from react-icons .
+
+- after the last div which contains Icon we add another <div className="flex-1"></div> which is responsible to check if we have {date} and show it .
+        <div className="flex-1">
+            {date && (
+                <h1 className="mb-2 sm:px-6 sm:py-1.5 px-4 py-1 rounded-full bg-gray-200 text-gray-600 w-fit sm:text-lg text-sm font-bold">{date}</h1>
+            )}
+        </div>
+
+- after the {date} inside the div we add another h1 for {role} --> <h1 className="text-gray-200 text-xl sm:text-2xl font-semibold">{role}</h1>
+- below the h1 we add a <p className="text-gray-200 text-sm sm:text-base pt-3"></p> which contains info about the role.
+- 
