@@ -289,4 +289,9 @@ i used the code below to :
 - to build this section we should create a folder Home/Projects/Projects.tsx
 - then we create a component boilerplate and then add it to our Home.tsx -->    <Project />
 - in the Project.tsx we create a div and give this className="pt-16 pb-16"
-- inside the div we add a <H1>
+- inside the div we add a <H1> --> 
+        <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white'>
+            Recent <span className='text-cyan-300'>Projects</span>
+        </h1>
+
+- below the h1 we create another div --> className='width-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16'
