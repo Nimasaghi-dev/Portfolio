@@ -302,3 +302,19 @@ i used the code below to :
 - below the h1 we add another h1 which is responsible to show some other info about the project but smaller with different color.
     <h1 className='pt-2 font-medium text-white/80'>MERN stack - Team Project</h1>
 - now its time to add 3 more projects. we copied the code from the first photo since it is the same process.
+
+
+------------- Skills Section -------------
+- we create folder inside Home --> Home/Skills/Skills.tsx
+- create Skills boilerplate and add it in Home.tsx
+- then in the skills.tsx above the component we create skill array of object.
+- this array will contains languages we know like Javascript , react , ...
+    const skills = [
+        {
+            name:'Javascript',
+            icon:<SiJavascript />,
+        }
+    ]
+- it has two properties name and icon . we import icon from react-icons/si .
+- we will copy this object as much as we need.
+- then in the first div we add className --> 
