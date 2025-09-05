@@ -317,4 +317,24 @@ i used the code below to :
     ]
 - it has two properties name and icon . we import icon from react-icons/si .
 - we will copy this object as much as we need.
-- then in the first div we add className --> 
+- then in the first div we add className --> 'text-white pt-16 pb-16
+- inside the div we will have h1 tag.
+    <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white'>My <span className='text-cyan-300'>skills</span></h1>
+- next below the h1 we add a <div></div>
+- inside this div we want loop through each skills --> 
+        <div className='flex flex-wrap justify-center gap-6 mt-16'>
+            {skills.map(() => {
+                return 
+            })}
+        </div>
+
+- then we need to use npm package (react-parallax-tillt) to have 3d effect for each skill . npm i react-parallax-tilt
+- after installing we should import the package to Skills.tsx
+- then we should return a Tilt component --> return <Tilt key={skill.name} scale={1.5} transitionSpeed={400}></Tilt>
+
+                    Dont forget we need to convert the Skills.tsx to a client component 'use client'
+
+- then inside <Tilt> we will have a div with the className of ---> 'bg-[#14134145] text-center w-40 h-48 rounded-3xl flex flex-col items-center justify-center shadow-lg transition hover:scale-105'
+- inside the last div we add another div --> className='text-5xl mb-4 text-gray-300' this div will contains {skill.icon}
+- below the div we add a <p></p> and inside it {skill.name}
+                
