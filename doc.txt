@@ -295,3 +295,10 @@ i used the code below to :
         </h1>
 
 - below the h1 we create another div --> className='width-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16'
+- inside the last div we add another div which contains <Image /> --> <Image src='/images/NomNom-menu.png' alt='img' width={800} height={650} className='rounded-lg' />
+- now we have our first image.
+- after the Image tag we add h1 which is responsible to show a short info about the project.
+    <h1 className='mt-4 text-xl sm:text-2xl font-semibold text-white'>Food ordering application - <span className='text-cyan-300'>NOMNOM</span></h1>
+- below the h1 we add another h1 which is responsible to show some other info about the project but smaller with different color.
+    <h1 className='pt-2 font-medium text-white/80'>MERN stack - Team Project</h1>
+- now its time to add 3 more projects. we copied the code from the first photo since it is the same process.
