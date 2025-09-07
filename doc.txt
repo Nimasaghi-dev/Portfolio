@@ -336,5 +336,24 @@ i used the code below to :
 
 - then inside <Tilt> we will have a div with the className of ---> 'bg-[#14134145] text-center w-40 h-48 rounded-3xl flex flex-col items-center justify-center shadow-lg transition hover:scale-105'
 - inside the last div we add another div --> className='text-5xl mb-4 text-gray-300' this div will contains {skill.icon}
-- below the div we add a <p></p> and inside it {skill.name}
-                
+- below the div we add a <p></p> and inside it {skill.name} --> <p className='text-white mt-1'>{skill.name}</p>
+
+
+------------- Contact info Section --------------
+- we create a folder inside Home and we name it contact --> Home/Contact
+- inside this we create Contact.tsx --> Home/Contact/Contact.tsx
+- inside Contact.tsx we create a component biolerplate
+- Then we add the Contact.tsx component to our Home.tsx because we need to render it.
+- inside the Contact.tsx we add className='pt-16 pb-16'
+- inside the first div we create another <div></div> --> className='w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'
+- we will devide the space in 2 part one for the text content and one for the form.
+- for the first part {/* Text content */} we create a div and inside the div we have a H1 --> <h1>Schedule a call with me to see if i can help</h1>
+- h1 will have some className -->    'text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200'
+- below the H1 we add a <p></p> which includes subheading. --> <p className='text-gray-400 mt-5 text-base sm:text-lg'>Reach out to me today</p>
+- Next we should add mobile number , email Adress and Location .
+- after the <p></p> we will have a <div></div>. className="mt-7" .
+- inside the last div we have another div --> className='flex items-center space-x-3 mb-4'
+- inside the div we have an icon - envelop icon to show email. -->  <BiEnvelope className='w-9 h-9 text-cyan-300' />
+- Below the <BiEnvelope /> we will add a <p></p> which contains the eamil Adress.
+- we copy the div which includes <BiEnvelope/> for the mobile number and Map (Adress)
+- 

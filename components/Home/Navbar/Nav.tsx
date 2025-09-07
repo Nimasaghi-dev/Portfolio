@@ -8,6 +8,7 @@ import { HiBars3BottomRight } from 'react-icons/hi2';
 import { color, motion } from "framer-motion";
 import { FaLaptopCode } from "react-icons/fa";
 
+
 type Props = {
   openNav: () => void;
 }
