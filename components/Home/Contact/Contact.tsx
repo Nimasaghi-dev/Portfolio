@@ -41,6 +41,16 @@ const Contact = () => {
                 placeholder='name' 
                 className='px-4 py-3.5 bg-[#363659] text-white outline-none rounded-md w-full placeholder:text-white/70 ' 
                 />
+                <input 
+                type="email" 
+                placeholder='Email Address' 
+                className='px-4 py-3.5 mt-6 bg-[#363659] text-white outline-none rounded-md w-full placeholder:text-white/70 ' 
+                />
+                <input 
+                type="text" 
+                placeholder='Telephone Number' 
+                className='px-4 py-3.5 mt-6 bg-[#363659] text-white outline-none rounded-md w-full placeholder:text-white/70 ' 
+                />
             </div>
         </div>
     </div>
