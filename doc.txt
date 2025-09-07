@@ -385,4 +385,9 @@ i used the code below to :
         <button className='mt-8 px-12 py-4 bg-blue-950 hover:bg-blue-900 transition-all duration-300 cursor-pointer text-white rounded-full'>
         Send message
         </button>
+
+
+---------- Footer ---------
+- create a newfolder inside Home.
+- Home/Footer/Footer.tsx and we create a biolerplate for the footer.tsx
 - 
