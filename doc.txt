@@ -360,5 +360,9 @@ i used the code below to :
 ---- Social media icons ----
 - we create a <div className='flex items-center mt-8 space-x-2'>
 - inside the first div we create another div --> <div className='w-14 h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer flex-col hover:bg-blue-800 transition-all duration-300'></div>
-- inside tis div we have our first Social media icon --> <FaFacebook className='w-6 h-6 text-white' />
-- Then we copy it 3 more times for other social media accounts.
+- inside tis div we have our first Social media icon --> <FaLinkedin className='w-6 h-6 text-white' />
+- Then we copy it 1 more times for github accounts.
+
+---- {/*Form section */} -----
+- we add a div --> <div className='md:p-10 p-5 bg-[#131332] rounded-lg'></div>
+- inside this div we will have <input></input>

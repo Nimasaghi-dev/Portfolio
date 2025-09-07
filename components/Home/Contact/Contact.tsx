@@ -34,6 +34,14 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            {/* Form section */}
+            <div className='md:p-10 p-5 bg-[#131332] rounded-lg'>
+                <input 
+                type="text" 
+                placeholder='name' 
+                className='px-4 py-3.5 bg-[#363659] text-white outline-none rounded-md w-full placeholder:text-white/70 ' 
+                />
+            </div>
         </div>
     </div>
   )
