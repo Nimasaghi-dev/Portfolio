@@ -373,3 +373,16 @@ i used the code below to :
         />
 
 - we need two more input field for Emailadress and mobile number so we copy the first input field two more times .
+
+- Then we need a text area so we use <textarea></textarea> tag
+        <textarea 
+        placeholder='Your message' 
+        className='px-4 py-3.5 mt-6 bg-[#363659] text-white outline-none rounded-md w-full placeholder:text-white/70 h-[10rem]'>
+        </textarea>
+
+- next we need a Send message button.
+- so after the textarea we add a button tag 
+        <button className='mt-8 px-12 py-4 bg-blue-950 hover:bg-blue-900 transition-all duration-300 cursor-pointer text-white rounded-full'>
+        Send message
+        </button>
+- 
