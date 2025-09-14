@@ -35,6 +35,7 @@ const Nav = ({ openNav }: Props) => {
       <div className="flex justify-between h-full w-[90%] mx-auto items-center">
         
         {/* logo with animation */}
+        <Link href="/" className="flex items-center space-x-2 cursor-pointer">
         <motion.div 
           className="flex items-center space-x-2 cursor-pointer"
           initial={{ opacity: 0, y: -20 }}
@@ -72,6 +73,7 @@ const Nav = ({ openNav }: Props) => {
         </motion.h1>
 
         </motion.div>
+        </Link>
 
         {/* navLinks */}
         <div className="hidden lg:flex items-center space-x-10">
