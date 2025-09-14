@@ -5,7 +5,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import { BiDownload } from "react-icons/bi";
 import { HiBars3BottomRight } from 'react-icons/hi2';
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaLaptopCode } from "react-icons/fa";
 
 
@@ -91,14 +91,15 @@ const Nav = ({ openNav }: Props) => {
         {/* buttons */}
         <div className="flex items-center space-x-4">
           {/* CV button */}
-          <motion.button
+          <motion.a
+            href="/resume/resume-nima-en.pdf"
             className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all duration-300 text-white flex items-center space-x-2"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <BiDownload className="w-5 h-5" />
             <span>Download CV</span>
-          </motion.button>
+          </motion.a>
 
           {/* Hamburger menu */}
           <HiBars3BottomRight
