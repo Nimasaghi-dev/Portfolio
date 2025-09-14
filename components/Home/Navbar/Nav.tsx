@@ -48,7 +48,7 @@ const Nav = ({ openNav }: Props) => {
             transition={{ type: "spring", stiffness: 120, damping: 10 }}
           >
             {/*  Replaced BiAtom with Code2 */}
-            <FaLaptopCode className="w-5 h-5 text-black" />
+            <FaLaptopCode className="w-5 h-5 text-black cursor-pointer" />
           </motion.div>
 
           <motion.h1
